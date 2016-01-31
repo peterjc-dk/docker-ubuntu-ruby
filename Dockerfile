@@ -7,7 +7,6 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-
 RUN apt-get update && \
     gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3 && \
     apt-get install -y openssh-server openssh-client && \
