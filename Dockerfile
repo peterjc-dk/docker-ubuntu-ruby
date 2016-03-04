@@ -14,4 +14,5 @@ RUN apt-get update && \
 
 RUN \curl -ksSL https://get.rvm.io | bash -s stable --ruby
 RUN /bin/bash -l -c "gem install bundler --no-ri --no-rdoc"
+RUN /bin/bash -l -c "gem install json_pure --no-ri --no-rdoc"
 ENV PATH /usr/local/rvm/bin:/usr/local/rvm/rubies/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
